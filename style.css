@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+
+
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+nav{
+    grid-column: 2/spann 2;
+}
+
+header{
+    background-image: url('img/dandelion.jpg');
+
+}
+
+nav{
+    background-image: url('img/dand2.jpg');
+    
+}
+main>nav{
+    text-align: left;
+}
+
+aside{background-image: url(img/dand3.jpg);
+}
+
+footer{
+    background-image: url(img/dandy.gif);
+}
+
+article{
+    background-image: url(img/dandy2.gif);
+
+}
+main>*{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    text-align: right;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 120%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.4;
+}
+main>*:hover{
+    opacity: 1;
+}
+main>nav{
+    text-align: left;
+}
+nav>div>a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 20px;
+    
+}
+
+#menu{
+    background-color: rgba(81, 11, 121, 0.295);
+    padding: 10px;
+}
